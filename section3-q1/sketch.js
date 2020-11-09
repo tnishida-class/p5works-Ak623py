@@ -11,8 +11,13 @@ function balloon(t){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
   let p = 2;
-  fill(0);
+  let c = ('yellow');
+  fill(c);
+  stroke(0)
   rect(0, 0, w + p * 2, h + p * 2);
-  fill(255);
+  line(w + p * 2 - 5, h + p * 2, w + p * 2 + 5, h + p * 2 + 5);
+  line(w + p * 2, h + p * 2 - 5, w + p * 2 + 5, h + p * 2 + 5);
+  fill('red');
+  noStroke();
   text(t, p, h + p);
 }
