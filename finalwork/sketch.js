@@ -35,7 +35,7 @@ function draw(){
 
    stroke(255, 255, 240)
    ellipse(width / 2, height / 2, l, l);
-     l += 5
+     l += 4.5
    }
 
 function star(cx, cy, size, c){
