@@ -14,11 +14,11 @@ function draw(){
       let r = i * 10 + 10
       if(i < 9){
         fill(255, 0, 0);
-        stroke(255, 0, 0);
+        stroke(238, 130, 255);
       }
    else if(i < 18){
         noFill();
-        stroke(238, 130, 255);
+        stroke(255, 0, 0);
       }
    else if(i < 27){
         noFill();
