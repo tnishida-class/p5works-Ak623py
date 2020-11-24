@@ -46,7 +46,7 @@ function draw(){
        t ='TIME UP!'; }
    }
 
-function star(cx, cy, size, c){
+function star(cx, cy, size){
   push();
   fill(255, 255, 0)
   stroke(255, 255, 0);
