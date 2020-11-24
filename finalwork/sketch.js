@@ -1,5 +1,5 @@
 // 最終課題を制作しよう
-let x, y, l;
+let x, y, l, t;
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -14,11 +14,11 @@ function draw(){
       let r = i * 10 + 10
       if(i < 9){
         fill(255, 0, 0);
-        stroke(238, 130, 255);
+        stroke(255, 0, 0);
       }
    else if(i < 18){
         noFill();
-        stroke(255, 0, 0);
+        stroke(238, 130, 255);
       }
    else if(i < 27){
         noFill();
@@ -36,6 +36,14 @@ function draw(){
    stroke(255, 255, 240)
    ellipse(width / 2, height / 2, l, l);
      l += 4.5
+
+   textSize(200);
+   fill(255, 255, 240);
+   text(t, width / 2 - 400, height / 3);
+     if(l < width && x > (width / 2 - 50) && x < (width /2 + 50) && y > (height /2 - 50) && y < (height /2 + 50)){
+       t ='CLEAR!'; }
+     else if(l > width && !(x > (width / 2 - 50) && x < (width /2 + 50) && y > (height /2 - 50) && y < (height /2 + 50))){
+       t ='TIME UP!'; }
    }
 
 function star(cx, cy, size, c){
